@@ -1,0 +1,198 @@
+/* Стилизация шапки сайта */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(51, 51, 51);
+  color: #fff;
+}
+
+header h1{
+  padding: 10px 20px;
+  align-self: center;
+}
+
+.navdiv {
+  padding: 7vh 30px;
+  flex-grow: 1;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  min-height: 15vh;
+  max-height: 15vh;
+}
+
+.nav li{
+  display: flex;
+  width: auto;
+}
+
+li ul{
+  padding-left: 0px;
+  margin-block-start: unset;
+  margin-top: 15vh;
+}
+
+.navul {
+  display: flex;
+  list-style: none;
+  flex-grow: 1;
+  min-height: 8vh;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  flex-grow: 1;
+  transition: background-color 0.5s ease;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  background-color: #666;
+}
+
+.button {
+  color: #fff;
+  text-decoration: none;
+  flex-grow: 1;
+  transition: background-color 0.5s ease;
+}
+
+.button:hover {
+  text-decoration: underline;
+  background-color: #666;
+}
+
+/* Стилизация основного контента */
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0px;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.quoteMenu {
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+}
+
+.left{
+  float:left;
+  margin: 14px 14px 14px 7px;
+}
+
+.right{
+  float:right;
+  margin: 14px 14px 14px 7px;
+}
+
+.man{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(0.5, 1fr);
+  grid-template-rows: repeat(0.5, 1fr);
+  min-width: 100vh;
+  align-self: center;
+  align-items: center;
+  width: auto;
+  padding: 20px;
+  flex: 1;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 3; 
+  font-size: 20px;
+  font-style: italic;
+  align-self:center;
+  color: rgba(0,0,0,0.6); 
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+}
+.div2 { grid-area: 2 / 1 / 3 / 2; margin-bottom: 60px;}
+.div3 { grid-area: 2 / 2 / 3 / 3; margin-bottom: 60px;}
+
+/* мужик 2? чеееее?? */
+.man2{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 80% 1fr;
+  min-width: 1300px;
+  align-self: center;
+  align-items: center;
+  width: auto;
+  padding: 20px;
+  flex: 1;
+}
+
+.date{
+  margin-right: 15px;
+  align-self: center;
+}
+
+.author{
+  align-self: center;
+}
+
+canvas {
+  justify-self: center;
+}
+
+.man main{
+  align-self: center;
+  width: 800px;
+  padding: 20px;
+  flex: 1;
+}
+
+main {
+  align-self: center;
+  width: 150vh;
+  padding: 20px;
+  flex: 1;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+article {
+  margin-bottom: 40px;
+}
+
+article h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+article p {
+  line-height: 1.5;
+}
+
+article a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+article a:hover {
+  background-color: #444;
+}
+
+/* Стилизация подвала сайта */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}

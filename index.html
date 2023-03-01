@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <link rel="stylesheet" href="./resources/styles/main.css">
+  <meta charset="UTF-8">
+  <title>Философ Платон | Главная страница</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Философ Платон</h1>
+    <div class="nav">
+      <ul class="navul">
+        <li><a href="#"><div class="navdiv">Главная</div></a></li>
+        <li><a href="./templates/articles/article_50.html"><div class="navdiv">Биография</div></a></li>
+        <li><a href="./templates/articles/article_2.html"><div class="navdiv">Философия</div></a></li>
+        <li>
+          <a href="#" id="toggleButton">
+            <div class="navdiv">Цитаты</div>
+          </a>
+          <ul id="dropdownmenu" style="display: none;">
+            <li><a href="./templates/quotes/quotes_1.html" class="navdiv quoteMenu">О человеке</a></li>
+            <li><a href="./templates/quotes/quotes_2.html" class="navdiv quoteMenu">О государстве</a></li>
+            <li><a href="./templates/quotes/quotes_3.html" class="navdiv quoteMenu">Об образовании</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="man">
+  <div class="div1"><p style="margin-top: 0; margin-left: 150px; margin-right: 150px; font-weight: bold;">Что вы скорее всего услышите, если спросите у случайного человека на улице: "Назови философа"? Скорее всего, ему придут на ум древнегреческие имена, и, скорее всего, это будут Платон или Аристотель. И это неспроста - трио Сократа, Платона и Аристотеля по истине можно считать учителями человечества, учения которых легли в основу философии, как науки, и на идеях которых строилась вся западная философия средних веков и нового времени.</p></div>
+    <canvas id="canvas" class="div2"></canvas>
+    <main class="div3">
+      <h2>Статьи о Платоне</h2>
+      
+      <article>
+        <h3>Учение Платона об идеальном государстве</h3>
+        <p>«Государство, – писал он, –
+          возникает, когда каждый из нас не может удовлетворить сам себя,
+          но во многом еще нуждается...</p>
+        <a href="./templates/articles/article_1.html">Читать далее</a>
+      </article>
+      <article>
+        <h3>Изучение философии Платона в СССР</h3>
+        <p>В этой статье мы проанализируем диалог "Государство" Платона и рассмотрим его философские идеи о справедливости и государстве.</p>
+        <a href="./templates/articles/article_2.html">Читать далее</a>
+      </article>
+      <article>
+        <h3>Платон об идеальных и ложных философах</h3>
+        <p>В этой статье мы проанализируем диалог "Государство" Платона и рассмотрим его философские идеи о справедливости и государстве.</p>
+        <a href="./templates/articles/article_51.html">Читать далее</a>
+      </article>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Философ Платон</p>
+  </footer>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./JS/libs/three.module.js",
+        "STLLoader": "./JS/libs/STLLoader.js",
+        "OrbitControls": "./JS/libs/OrbitControls.js"
+      }
+    }
+  </script>
+  <script type="module" src="./JS/scripts/loadModel.js"></script>
+
+  <script type="module" src="./JS/scripts/loadQuotesMenu.js"></script>
+</body>
+</html>
